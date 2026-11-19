@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glyph — Intelligent Document Parser</title>
+    <meta
+      name="description"
+      content="Turn any document into clean, structured data. PDF, DOCX, images and more — parsed with layout-aware OCR, table detection and key-value field extraction."
+    />
+    <script>
+      try {
+        if (localStorage.getItem("glyph-theme") === "light")
+          document.documentElement.classList.remove("dark");
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/index.tsx"></script>
+  </body>
+</html>
